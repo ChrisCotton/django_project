@@ -12,6 +12,8 @@ __double underscores__
 
 ### Some basic Markdown syntax stuff ( from the docs )
 
+***
+
 I get 10 times more traffic from [Google] [1] than from
 [Yahoo] [2] or [MSN] [3].
 
@@ -21,5 +23,26 @@ I get 10 times more traffic from [Google] [1] than from
 
 
 Visit [Daring Fireball][] for more information.
+
+
+### How we propose to push public branches ( Non local & accesssable by anyone )
+
+> $ git clone git://github.com/mettadore/tutorials.git
+> $ cd tutorials
+> $ git branch
+> * master
+> $ git checkout -b public
+> Switched to a new branch 'public'
+> $ echo "Some random change"&gt; README
+> $ git commit -a -m "Update readme"
+> $ git push origin public
+> $ git branch
+> master
+> * public
+> $
+
+***
+
+### How we merge local branches back into master. 
 
 
