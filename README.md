@@ -43,6 +43,21 @@ Visit [Daring Fireball][] for more information.
 
 ***
 
-### How we merge local branches back into master. 
+### How we merge private branches back into master. and then keep working on local copy: 
+
+> $ git checkout -b topic
+> > Work a bit and commit changes
+> $ git pull origin master
+> $ git rebase master
+> > Work a bit and commit changes
+> $ git pull origin master
+> $ git rebase master
+> > Work a bit and commit changes
+> > When you're ready to make everything official:
+> $ git checkout master
+> $ git merge topic
+> $ git push
+> $ git branch -D topic  ##### or, as I do, keep using the local branch for more changes
+ 
 
 
