@@ -28,21 +28,22 @@ Visit [Daring Fireball][] for more information.
 
 ### How we propose to push public branches ( Non local & accesssable by anyone )
 
-> $ git clone git://github.com/mettadore/tutorials.git
-> $ cd tutorials
-> $ git branch
-> * master
-> $ git checkout -b public
-> Switched to a new branch 'public'
-> $ echo "Some random change"&gt; README
-> $ git commit -a -m "Update readme"
-> $ git push origin public
-> $ git branch
-> master
+> * $ git clone git://github.com/mettadore/tutorials.git
+> * $ cd tutorials
+> * $ git branch
+> * \* master
+> * $ git checkout -b public
+> > Switched to a new branch 'public'
+> * $ echo "Some random change"&gt; README
+> * $ git commit -a -m "Update readme"
+> * $ git push origin public
+> * $ git branch
+> * \* master
 > * public
-> $
+> * $
 
 ***
+
 
 ### How we merge private branches back into master. and then keep working on local copy: 
 
@@ -59,6 +60,7 @@ Visit [Daring Fireball][] for more information.
 > 7. $ git merge topic
 > 8. $ git push
 > 9. $ git branch -D topic  ##### or, as I do, keep using the local branch for more changes
+>> Getting closer to what I want. 
  
 
 
