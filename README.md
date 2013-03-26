@@ -1,6 +1,6 @@
 # django_project
 
-## Sample Django Project to Hammer out github workflow
+## Sample Django Project to Hammer out github workflow and end to end test strategy
 
 *single asterisks*
 
